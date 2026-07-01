@@ -220,16 +220,16 @@ function initContactForm() {
                 body: JSON.stringify(formData)
             });
 
+            const result = await response.json().catch(() => ({}));
+
             if (response.ok) {
-                showFormMessage('Message sent successfully! I\'ll get back to you within 24 hours.', 'success');
+                showFormMessage(result.message || 'Message sent successfully! I\'ll get back to you within 24 hours.', 'success');
                 form.reset();
             } else {
-                throw new Error('Server error');
+                throw new Error(result.error || 'Unable to send your message right now.');
             }
         } catch (error) {
-            // Fallback: show success anyway (for static hosting without backend)
-            showFormMessage('Thanks for your message! I\'ll get back to you within 24 hours.', 'success');
-            form.reset();
+            showFormMessage(error.message || 'Unable to send your message right now. Please try again later.', 'error');
         }
 
         submitBtn.innerHTML = originalText;

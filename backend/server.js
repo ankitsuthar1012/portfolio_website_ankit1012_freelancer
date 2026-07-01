@@ -189,14 +189,16 @@ function sanitize(str) {
 // =============================================
 // START SERVER
 // =============================================
-app.listen(PORT, () => {
-    console.log(`
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`
     ╔══════════════════════════════════════════╗
     ║   Portfolio Server Running!              ║
     ║   Local:  http://localhost:${PORT}       ║
     ║   Status: Ready to accept connections    ║
     ╚══════════════════════════════════════════╝
-    `);
-});
+        `);
+    });
+}
 
 module.exports = app;
