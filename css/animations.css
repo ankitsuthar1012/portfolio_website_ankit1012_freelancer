@@ -1,0 +1,363 @@
+/* =============================================
+   ANIMATIONS & MOTION EFFECTS
+   Scroll-reveal, parallax, hover effects
+   ============================================= */
+
+/* =============================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================= */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered children */
+.animate-on-scroll:nth-child(2) { transition-delay: 0.1s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.2s; }
+.animate-on-scroll:nth-child(4) { transition-delay: 0.3s; }
+.animate-on-scroll:nth-child(5) { transition-delay: 0.4s; }
+.animate-on-scroll:nth-child(6) { transition-delay: 0.5s; }
+
+/* =============================================
+   HERO ENTRANCE ANIMATIONS
+   ============================================= */
+.animate-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================================
+   FLOATING PARTICLES
+   ============================================= */
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent-primary);
+    border-radius: 50%;
+    opacity: 0;
+    animation: floatParticle linear infinite;
+}
+
+@keyframes floatParticle {
+    0% {
+        opacity: 0;
+        transform: translateY(100vh) scale(0);
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px) scale(1);
+    }
+}
+
+/* =============================================
+   CARD TILT EFFECT
+   ============================================= */
+[data-tilt] {
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+[data-tilt] .project-info {
+    transform: translateZ(20px);
+}
+
+/* =============================================
+   MAGNETIC BUTTON EFFECT
+   ============================================= */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* =============================================
+   SKILL TAG HOVER ANIMATION
+   ============================================= */
+.skill-tag {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-tag::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.skill-tag:hover::after {
+    left: 100%;
+}
+
+/* =============================================
+   GLOWING BORDER ANIMATION
+   ============================================= */
+@keyframes borderGlow {
+    0%, 100% {
+        border-color: rgba(99, 102, 241, 0.2);
+    }
+    50% {
+        border-color: rgba(99, 102, 241, 0.5);
+    }
+}
+
+.service-card.featured {
+    animation: borderGlow 3s ease-in-out infinite;
+}
+
+/* =============================================
+   TEXT SHIMMER EFFECT
+   ============================================= */
+@keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+.gradient-text {
+    background-size: 200% auto;
+    animation: shimmer 4s linear infinite;
+}
+
+/* =============================================
+   NAVBAR ENTRANCE
+   ============================================= */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar {
+    animation: slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* =============================================
+   PROJECT CARD IMAGE ZOOM
+   ============================================= */
+.project-card .project-img-placeholder {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .project-img-placeholder {
+    transform: scale(1.05);
+}
+
+/* =============================================
+   TESTIMONIAL HOVER LIFT
+   ============================================= */
+.testimonial-card {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(99, 102, 241, 0.1);
+}
+
+/* =============================================
+   CONTACT FORM INPUT ANIMATION
+   ============================================= */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+}
+
+/* =============================================
+   FLOATING ANIMATION (for decorative elements)
+   ============================================= */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(1deg); }
+    66% { transform: translateY(5px) rotate(-1deg); }
+}
+
+.about-experience-badge {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* =============================================
+   LOADING SKELETON ANIMATION
+   ============================================= */
+@keyframes skeletonLoading {
+    0% { background-position: -200px 0; }
+    100% { background-position: calc(200px + 100%) 0; }
+}
+
+/* =============================================
+   REVEAL FROM SIDES
+   ============================================= */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* =============================================
+   SCALE-IN ANIMATION
+   ============================================= */
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* =============================================
+   SMOOTH SECTION TRANSITIONS
+   ============================================= */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+}
+
+/* =============================================
+   COUNTER NUMBER ANIMATION
+   ============================================= */
+.stat-number {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* =============================================
+   MOUSE FOLLOW GRADIENT (for sections)
+   ============================================= */
+.section-gradient-follow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.04) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+
+.section:hover .section-gradient-follow {
+    opacity: 1;
+}
+
+/* =============================================
+   MOBILE-SPECIFIC ANIMATIONS (reduced motion)
+   ============================================= */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .animate-on-scroll {
+        opacity: 1;
+        transform: none;
+    }
+
+    .animate-fade-up {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* =============================================
+   SMOOTH PAGE LOAD
+   ============================================= */
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: pageLoad 0.5s ease forwards;
+}
+

@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Web Developer & AI Solutions Expert. I build modern websites and integrate AI-powered automation to help businesses grow faster and work smarter.">
+    <meta name="keywords" content="web developer, AI solutions, freelance developer, chatbot integration, website development, automation, React developer">
+    <meta name="author" content="Ankit Suthar">
+    <title>Ankit Suthar | Web Developer & AI Solutions Expert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AS<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-up">
+                    <span class="badge-dot"></span>
+                    Available for Freelance Projects
+                </div>
+                <h1 class="hero-title animate-fade-up delay-1">
+                    I Build Websites That<br>
+                    <span class="gradient-text typing-text" id="typingText"></span>
+                </h1>
+                <p class="hero-subtitle animate-fade-up delay-2">
+                    Web Developer & AI Solutions Expert helping businesses grow with 
+                    modern websites and intelligent automation. Let's turn your ideas into 
+                    digital experiences that convert.
+                </p>
+                <div class="hero-cta animate-fade-up delay-3">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Hire Me</span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-fade-up delay-4">
+                    <div class="stat">
+                        <span class="stat-number" data-count="15">0</span>+
+                        <span class="stat-label">Projects Done</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="10">0</span>+
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="2">0</span>+
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">Get to Know Me</span>
+                <h2 class="section-title animate-on-scroll">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image animate-on-scroll">
+                    <div class="about-img-wrapper">
+                        <div class="about-img-placeholder">
+                            <span>Your Photo</span>
+                        </div>
+                        <div class="about-img-decoration"></div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="exp-number">2+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <h3 class="about-heading">I'm a Web Developer & AI Enthusiast Who Builds Solutions That Actually Work</h3>
+                    <p class="about-text">
+                        Hey there! I'm a passionate developer who combines the power of modern web technologies 
+                        with AI to create digital solutions that help businesses thrive. I don't just write code — 
+                        I solve problems.
+                    </p>
+                    <p class="about-text">
+                        Whether you need a stunning website that converts visitors into customers, an AI chatbot 
+                        that handles customer queries 24/7, or automation that saves you hours of manual work — 
+                        I've got you covered.
+                    </p>
+                    <p class="about-text">
+                        My approach is simple: understand your business goals, then build the right technology 
+                        to achieve them. No unnecessary complexity, no jargon — just results.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Clean, performant code</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>AI-powered solutions</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Client-first approach</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>On-time delivery</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Work Together</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">What I Work With</span>
+                <h2 class="section-title animate-on-scroll">My Tech Stack</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    I combine web development expertise with AI tools to deliver complete digital solutions.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <!-- Web Development Skills -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- AI & Automation Skills -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0 1 12 2z"/>
+                                <path d="M9 6.12C6.46 6.89 4.69 9.26 5.06 11.95c.37 2.69 2.74 4.64 5.44 4.64"/>
+                                <path d="M15 6.12c2.54.77 4.31 3.14 3.94 5.83-.37 2.69-2.74 4.64-5.44 4.64"/>
+                            </svg>
+                        </div>
+                        <h3>AI & Automation</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">ChatGPT Integration</span>
+                        <span class="skill-tag">AI Chatbots</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Workflow Automation</span>
+                        <span class="skill-tag">Zapier</span>
+                        <span class="skill-tag">Make.com</span>
+                        <span class="skill-tag">Python Basics</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Netlify</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">WordPress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">My Work</span>
+                <h2 class="section-title animate-on-scroll">Featured Projects</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Real solutions I've built combining web development and AI to solve business problems.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <div class="project-img-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>OpenAI API</span>
+                            <span>Node.js</span>
+                        </div>
+                        <h3 class="project-title">AI Customer Support Chatbot</h3>
+                        <p class="project-desc">
+                            Built a smart chatbot for an e-commerce store that handles 80% of customer queries 
+                            automatically, reducing support costs by 60% and improving response time from hours to seconds.
+                        </p>
+                        <div class="project-value">
+                            <strong>Client Value:</strong> Saved 20+ hours/week in customer support
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <div class="project-img-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="3" y1="9" x2="21" y2="9"/>
+                                <line x1="9" y1="21" x2="9" y2="9"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>AI Content</span>
+                            <span>SEO</span>
+                        </div>
+                        <h3 class="project-title">AI-Powered Blog Platform</h3>
+                        <p class="project-desc">
+                            A content platform with AI-assisted writing, auto SEO optimization, and smart 
+                            content recommendations. Helped a marketing agency produce 3x more content.
+                        </p>
+                        <div class="project-value">
+                            <strong>Client Value:</strong> 3x content output, 40% more organic traffic
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <div class="project-img-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Zapier</span>
+                            <span>APIs</span>
+                        </div>
+                        <h3 class="project-title">Business Workflow Automation</h3>
+                        <p class="project-desc">
+                            Automated lead capture, email sequences, and CRM updates for a real estate agency. 
+                            Connected 5+ tools into one seamless workflow that runs on autopilot.
+                        </p>
+                        <div class="project-value">
+                            <strong>Client Value:</strong> Saved 15 hours/week, zero missed leads
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <div class="project-img-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <h3 class="project-title">SaaS Landing Page + Dashboard</h3>
+                        <p class="project-desc">
+                            High-converting landing page with integrated analytics dashboard for a SaaS startup. 
+                            Achieved 4.2% conversion rate — well above the industry average of 2.35%.
+                        </p>
+                        <div class="project-value">
+                            <strong>Client Value:</strong> 4.2% conversion rate, 200+ signups/month
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <div class="project-img-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>AI API</span>
+                        </div>
+                        <h3 class="project-title">AI Resume Builder</h3>
+                        <p class="project-desc">
+                            Web app that uses AI to generate tailored resumes and cover letters based on job 
+                            descriptions. Users input their experience, AI crafts optimized content.
+                        </p>
+                        <div class="project-value">
+                            <strong>Client Value:</strong> 500+ users, 70% reported more interview calls
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <div class="project-img-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                                <line x1="7" y1="7" x2="7.01" y2="7"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Stripe</span>
+                        </div>
+                        <h3 class="project-title">E-commerce Store with AI Recommendations</h3>
+                        <p class="project-desc">
+                            Full e-commerce solution with AI-powered product recommendations, smart search, 
+                            and personalized shopping experience that increased average order value by 25%.
+                        </p>
+                        <div class="project-value">
+                            <strong>Client Value:</strong> 25% higher AOV, 35% more repeat purchases
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <div class="modal-tags" id="modalTags"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="modal-value" id="modalValue"></div>
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <ul id="modalFeatures"></ul>
+                </div>
+                <div class="modal-tech">
+                    <h4>Technologies Used</h4>
+                    <div class="modal-tech-tags" id="modalTech"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary modal-cta">
+                    <span>Want Something Similar? Let's Talk</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">What I Offer</span>
+                <h2 class="section-title animate-on-scroll">My Services</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Tailored solutions designed to help your business grow online and work smarter.
+                </p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Custom Website Development</h3>
+                    <p class="service-desc">
+                        Fast, responsive, and beautiful websites built from scratch. From business sites to 
+                        web apps — designed to convert visitors into customers.
+                    </p>
+                    <ul class="service-features">
+                        <li>Responsive design for all devices</li>
+                        <li>SEO-optimized structure</li>
+                        <li>Fast loading speeds</li>
+                        <li>Modern UI/UX design</li>
+                    </ul>
+                    <span class="service-price">Starting at $500</span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card animate-on-scroll featured">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">AI Chatbot Integration</h3>
+                    <p class="service-desc">
+                        Smart AI chatbots that handle customer support, qualify leads, and book appointments 
+                        — 24/7, without hiring extra staff.
+                    </p>
+                    <ul class="service-features">
+                        <li>Custom-trained on your business</li>
+                        <li>24/7 automated support</li>
+                        <li>Lead qualification</li>
+                        <li>Multi-platform deployment</li>
+                    </ul>
+                    <span class="service-price">Starting at $800</span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Automation Solutions</h3>
+                    <p class="service-desc">
+                        Eliminate repetitive tasks and connect your tools. I build workflows that save you 
+                        hours every week and reduce human error.
+                    </p>
+                    <ul class="service-features">
+                        <li>Workflow automation</li>
+                        <li>Tool integrations (CRM, Email, etc.)</li>
+                        <li>Data syncing & reporting</li>
+                        <li>Custom API connections</li>
+                    </ul>
+                    <span class="service-price">Starting at $400</span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Landing Pages That Convert</h3>
+                    <p class="service-desc">
+                        High-converting landing pages designed with proven copywriting frameworks and 
+                        optimized for maximum signups, sales, or leads.
+                    </p>
+                    <ul class="service-features">
+                        <li>Conversion-focused design</li>
+                        <li>A/B testing ready</li>
+                        <li>Fast load times</li>
+                        <li>Analytics integration</li>
+                    </ul>
+                    <span class="service-price">Starting at $300</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">Client Love</span>
+                <h2 class="section-title animate-on-scroll">What Clients Say</h2>
+            </div>
+            <div class="testimonials-slider animate-on-scroll">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Incredible work! The AI chatbot reduced our support tickets by 60% in the first month. 
+                        The website is fast, beautiful, and our customers love it. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <strong>James Davidson</strong>
+                            <span>CEO, TechFlow Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "The automation workflow saved our team 15+ hours every week. What used to take us all 
+                        day now happens automatically. Best investment we've made this year."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <strong>Sarah Mitchell</strong>
+                            <span>Marketing Director, GrowFast Agency</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Professional, responsive, and truly understands both web development and AI. 
+                        Delivered our project on time and the results exceeded expectations. Will hire again!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <strong>Raj Kumar</strong>
+                            <span>Founder, StartupLaunch.io</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">Get In Touch</span>
+                <h2 class="section-title animate-on-scroll">Let's Build Something Amazing</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Have a project in mind? I'd love to hear about it. Drop me a message and 
+                    let's discuss how I can help your business grow.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email Me</h4>
+                            <p>ankitisro1012@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Available Worldwide (Remote)</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>Within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="website">Custom Website Development</option>
+                            <option value="chatbot">AI Chatbot Integration</option>
+                            <option value="automation">Automation Solutions</option>
+                            <option value="landing">Landing Page</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="" disabled selected>Select budget range</option>
+                            <option value="300-500">$300 - $500</option>
+                            <option value="500-1000">$500 - $1,000</option>
+                            <option value="1000-2500">$1,000 - $2,500</option>
+                            <option value="2500+">$2,500+</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-bracket">&lt;</span>AS<span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Building modern websites & AI solutions that help businesses grow.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="#services">Web Development</a>
+                    <a href="#services">AI Chatbots</a>
+                    <a href="#services">Automation</a>
+                    <a href="#services">Landing Pages</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ankit Suthar. All rights reserved.</p>
+                <p>Built with passion & AI ✨</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+
